@@ -73,5 +73,5 @@ class AdvancedStrategy(Strategy):
         return TargetAllocation(normalized_allocations)
 
 # Example of how to initialize and apply the strategy
-universe = ["AAPL", "MSFT", "GOOG"]  # Example universe of assets
+universe = ["AAPL", "MSFT", "GOOG", "NVDA","JPM","AMD"]  # Example universe of assets
 strategy = AdvancedStrategy(universe)
