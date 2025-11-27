@@ -1,9 +1,6 @@
 from surmount.base_class import Strategy, TargetAllocation
 from surmount.technical_indicators import ATR
 from surmount.logging import log
-# Assuming these data classes exist based on the prompt description
-# If they are custom, they would need to be defined or imported from a specific module.
-# Using placeholders for the import path as 'surmount.data'
 from surmount.data import EarningsSurprises, FinancialStatements, FinancialEstimates, LeveredDCF, OHLCV
 import numpy as np
 
