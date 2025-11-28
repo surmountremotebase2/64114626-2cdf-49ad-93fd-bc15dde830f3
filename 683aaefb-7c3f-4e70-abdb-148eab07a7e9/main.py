@@ -2,6 +2,7 @@ from surmount.base_class import Strategy, TargetAllocation
 from surmount.technical_indicators import ATR
 from surmount.logging import log
 from surmount.data import EarningsSurprises, FinancialStatements, FinancialEstimates, LeveredDCF, OHLCV
+import technical_indicators
 import numpy as np
 
 class TradingStrategy(Strategy):
