@@ -1,1 +1,1 @@
-{"allocations": {"AAPL": 15.0, "MSFT": 15.0, "GOOGL": 12.0, "NVDA": 10.0, "AMZN": 10.0, "TSLA": 8.0, "JPM": 10.0, "JNJ": 8.0, "V": 7.0, "SPY": 5.0}, "frequency": 30, "name": "", "period": "days"}
+{"allocations": {"SPY_UNIVERSE": 100.0}, "frequency": 30, "name": "", "period": "days"}
