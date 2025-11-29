@@ -1,0 +1,2 @@
+bash
+pip install pandas matplotlib pandas_datareader
