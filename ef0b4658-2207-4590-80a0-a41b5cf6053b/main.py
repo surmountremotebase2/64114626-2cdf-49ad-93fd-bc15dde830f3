@@ -5,7 +5,6 @@ from surmount.logging import log
 class TradingStrategy(Strategy):
     @property
     def assets(self):
-        # Only use SPY for the test
         return ["SPY"]
 
     @property
@@ -14,20 +13,17 @@ class TradingStrategy(Strategy):
 
     @property
     def data(self):
-        # No external data needed, just price
         return []
 
     def run(self, data):
         allocation = {}
         ticker = "SPY"
         
-        # Check if we have price data
+        # Se non ci sono dati, esci
         if "ohlcv" not in data or len(data["ohlcv"]) < 21:
             return TargetAllocation({})
 
         current_price = data["ohlcv"][-1][ticker]["close"]
-        
-        # Calculate Simple Moving Average (20 days)
         sma_list = SMA(ticker, data["ohlcv"], length=20)
         
         if not sma_list:
@@ -35,7 +31,7 @@ class TradingStrategy(Strategy):
             
         current_sma = sma_list[-1]
 
-        # Logic: If Price > SMA, Buy 100%. Else, go to Cash (0%).
+        # Logica: Prezzo > Media Mobile = Compra (100%), altrimenti Vendi (0%)
         if current_price > current_sma:
             allocation[ticker] = 1.0
         else:
