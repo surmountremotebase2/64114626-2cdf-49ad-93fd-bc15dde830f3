@@ -1,1 +1,1 @@
-{"allocations": {"AAPL": 12.0, "MSFT": 12.0, "GOOGL": 10.0, "AMZN": 10.0, "NVDA": 8.0, "JPM": 8.0, "JNJ": 8.0, "UNH": 7.0, "HD": 7.0, "PG": 6.0, "KO": 6.0, "V": 6.0}, "frequency": 30, "name": "", "period": "days"}
+{"allocations": {"AAPL": 12.0, "MSFT": 12.0, "GOOGL": 10.0, "AMZN": 10.0, "NVDA": 8.0, "JPM": 8.0, "JNJ": 8.0, "UNH": 7.0, "HD": 7.0, "PG": 6.0, "KO": 6.0, "V": 6.0}, "frequency": 30, "name": "alpha patavium strategy (test_2)", "period": "days"}
