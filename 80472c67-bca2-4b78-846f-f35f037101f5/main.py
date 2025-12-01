@@ -1,4 +1,3 @@
-#Type code here
 from surmount.base_class import Strategy, TargetAllocation
 from surmount.technical_indicators import ATR
 from surmount.logging import log
